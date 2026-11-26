@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import LogoutButton from "../components/LogoutButton";
 
 export const metadata: Metadata =  {
   title: "Tasker - список задач с проектами",
@@ -20,6 +21,7 @@ export default function RootLayout({
             <Link href="/" className="text-sm font-medium text-slate-600 hover:text-blue-600">
               Главная страница
             </Link>
+            <LogoutButton />
             <Link href="/" className="text-xl font-bold text-blue-600">
               Tasker
             </Link>
